@@ -26,6 +26,8 @@ class TaskListViewController: UIViewController {
         tableView.tableHeaderView = UIView()
 
         tableView.dataSource = self
+        
+        self.navigationItem.title = String("Scavenger Hunt")
 
         // Populate mocked data
         // Comment out this line if you want the app to load without any existing tasks.

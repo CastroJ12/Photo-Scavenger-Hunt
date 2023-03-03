@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wg7-xV-89h">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Wg7-xV-89h">
     <device id="retina6_0" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
         <capability name="Map view configurations" minToolsVersion="14.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
@@ -12,7 +12,7 @@
         <!--Tasks-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="TaskListViewController" customModule="lab_task_squirrel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="TaskListViewController" customModule="Photo_Scavenger_Hunt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -21,7 +21,7 @@
                                 <rect key="frame" x="0.0" y="91" width="390" height="753"/>
                                 <inset key="separatorInset" minX="48" minY="0.0" maxX="0.0" maxY="0.0"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="60" id="WLA-WM-GNM" customClass="TaskCell" customModule="lab_task_squirrel" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="TaskCell" rowHeight="60" id="WLA-WM-GNM" customClass="TaskCell" customModule="Photo_Scavenger_Hunt" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="50" width="390" height="60"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WLA-WM-GNM" id="BXc-Af-m5v">
@@ -31,7 +31,7 @@
                                                 <stackView opaque="NO" contentMode="scaleToFill" distribution="fillProportionally" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="3hR-MB-ER4">
                                                     <rect key="frame" x="20" y="10.999999999999998" width="350" height="20.333333333333329"/>
                                                     <subviews>
-                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle.inset.filled" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JTe-Ug-cUc">
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="JTe-Ug-cUc">
                                                             <rect key="frame" x="0.0" y="0.6666666666666643" width="18" height="19.333333333333332"/>
                                                             <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="font" weight="light">
                                                                 <fontDescription key="fontDescription" style="UICTFontTextStyleBody"/>
@@ -82,6 +82,7 @@
                     </view>
                     <navigationItem key="navigationItem" title="Tasks" id="BEp-bB-g30">
                         <barButtonItem key="rightBarButtonItem" image="plus" catalog="system" id="mUF-lW-14o">
+                            <color key="tintColor" systemColor="systemCyanColor"/>
                             <connections>
                                 <segue destination="Wks-lt-YIn" kind="presentation" identifier="ComposeSegue" id="HQw-jc-QaX"/>
                             </connections>
@@ -99,7 +100,7 @@
         <!--Task Detail View Controller-->
         <scene sceneID="X0K-wo-jU3">
             <objects>
-                <viewController id="iXV-Xg-iXn" customClass="TaskDetailViewController" customModule="lab_task_squirrel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="iXV-Xg-iXn" customClass="TaskDetailViewController" customModule="Photo_Scavenger_Hunt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="c5O-Gy-SMd">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -201,7 +202,7 @@
                         <rect key="frame" x="0.0" y="47" width="390" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
                         <textAttributes key="largeTitleTextAttributes">
-                            <color key="textColor" systemColor="systemBlueColor"/>
+                            <color key="textColor" systemColor="systemTealColor"/>
                         </textAttributes>
                     </navigationBar>
                     <nil name="viewControllers"/>
@@ -216,7 +217,7 @@
         <!--New Task-->
         <scene sceneID="Ioe-a1-6Ta">
             <objects>
-                <viewController id="fZK-XV-ZSw" customClass="TaskComposeViewController" customModule="lab_task_squirrel" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fZK-XV-ZSw" customClass="TaskComposeViewController" customModule="Photo_Scavenger_Hunt" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Qrs-jQ-4tq">
                         <rect key="frame" x="0.0" y="0.0" width="390" height="787"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -287,6 +288,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="circle" catalog="system" width="128" height="123"/>
         <image name="circle.inset.filled" catalog="system" width="128" height="123"/>
         <image name="plus" catalog="system" width="128" height="113"/>
         <systemColor name="systemBackgroundColor">
@@ -294,6 +296,12 @@
         </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemCyanColor">
+            <color red="0.19607843137254902" green="0.67843137254901964" blue="0.90196078431372551" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.18823529411764706" green="0.69019607843137254" blue="0.7803921568627451" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="tertiaryLabelColor">
             <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.29803921568627451" colorSpace="custom" customColorSpace="sRGB"/>
